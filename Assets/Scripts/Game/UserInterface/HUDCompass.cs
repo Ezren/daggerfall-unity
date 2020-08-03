@@ -154,6 +154,8 @@ namespace DaggerfallWorkshop.Game.UserInterface
 
             GUI.DrawTextureWithTexCoords(compassDstRect, compassTexture, compassSrcRect, false);
             GUI.DrawTexture(compassBoxRect, compassBoxTexture, ScaleMode.StretchToFill, true);
+            DaggerfallUIToCanvas.TextureToSprite("compass", compassDstRect, compassTexture, scroll);
+            DaggerfallUIToCanvas.TextureToSprite("compassbox", compassBoxRect, compassBoxTexture, scroll);
         }
 
         /// <summary>
